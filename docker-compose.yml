@@ -65,3 +65,19 @@ services:
         "wr.caps.flash": "1"
         "wr.caps.autopilot": "1"
 
+  chrome_84:
+    image: 'oldwebtoday/chrome:84'
+    build:
+      context: .
+      args:
+        CHROME_DEB: google-chrome-stable_84.0.4147.89-1_amd64.deb
+
+      labels:
+        "wr.version": "84"
+        "wr.release": "2020-07-14"
+        "wr.caps.flash": "1"
+        "wr.caps.autopilot": "1"
+
+
+
+
